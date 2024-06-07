@@ -20,7 +20,7 @@ test = pd.DataFrame({'cap-diameter':cap_diameter,'cap-shape':cap_shape,
                      'stem-color':stem_color,'season':season},index=[0])
 
 import pickle
-model = pickle.load(open("C:\\Users\\Dell\Downloads\\mushroom_cleaned (3).pkl",'rb'))
+model = pickle.load(open("mushroom_cleaned (3).pkl",'rb'))
 if submit_button:
      prediction=model.predict(test)
      
